@@ -1,22 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+
 function CardItem() {
     return (
         <>
-            <li className="cards_item">
-                <Link className="cards_item_link">
-                    <figure className="cards_item_pic-wrap">
+            <li className="cards__item">
+                <toLink className="cards__item__link">
+                    <figure className="cards__item__pic-wrap">
                         <img src="/" alt="Travel Image"
-                            className="cards_item_img"/>
+                            className="cards__item__img"/>
                     </figure>
-                    <div className="cards_item_info">
-                        <h5 className="cards_item_text"/>
+                    <div className="cards__item__info">
+                        <h5 className="cards__item__text"/>
                     </div>
-                </Link>
+                </toLink>
             </li>
         </>
-    )
+    );
 }
 
 export default CardItem;
